@@ -269,20 +269,20 @@
 					<version>1.0.0.CR4</version>
 					<scope>test</scope>
 				</dependency>
-				
+
 			</dependencies>
-			 <build>
-                <testResources>
-                    <testResource>
-                        <directory>src/test/resources</directory>
-                        <filtering>true</filtering>
-                    </testResource>
-                    <testResource>
-                        <directory>src/test/resources-glassfish-embedded</directory>
-                        <filtering>true</filtering>
-                    </testResource>
-                </testResources>
-</build>
+			<build>
+				<testResources>
+					<testResource>
+						<directory>src/test/resources</directory>
+						<filtering>true</filtering>
+					</testResource>
+					<testResource>
+						<directory>src/test/resources-glassfish-embedded</directory>
+						<filtering>true</filtering>
+					</testResource>
+				</testResources>
+			</build>
 		</profile>
 		<profile>
 			<id>glassfish-remote-arquillian</id>
@@ -332,5 +332,6 @@
 			</dependencies>
 		</profile>
 	</profiles>
+
 
 </project>
