@@ -1,4 +1,4 @@
-package iess;
+package servicio;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,6 +13,10 @@ import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+/**
+ * @author fernando.ochoa
+ *
+ */
 @RunWith(Arquillian.class)
 public class SaludaServicioTest {
 

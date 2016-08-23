@@ -2,14 +2,14 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package iess;
+package servicio;
 
 import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
 
 /**
  *
- * @author martin
+ * @author fernando.ochoa
  */
 @Stateless
 @LocalBean
