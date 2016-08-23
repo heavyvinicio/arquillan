@@ -19,6 +19,12 @@ import test.dao.impl.DaoImpl;
 import test.jpa.MovieDao;
 import test.model.Movie;
 
+/**
+ * Test for {@link MovieService}.
+ * 
+ * @author fochoac
+ *
+ */
 @RunWith(Arquillian.class)
 public class MovieServiceTest {
 
@@ -38,6 +44,9 @@ public class MovieServiceTest {
 				.addAsResource("META-INF/load.sql").addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
 	}
 
+	/**
+	 * Test for list of movie for actor
+	 */
 	@Test
 	public final void testListMoviesforActorName() {
 		List<Movie> movies1 = movieService.listMoviesforActorName("Shelley Duvall");

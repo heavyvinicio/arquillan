@@ -10,6 +10,12 @@ import javax.ejb.Stateless;
 import test.jpa.MovieDao;
 import test.model.Movie;
 
+/**
+ * Service for {@link Movie}.
+ * 
+ * @author fernando.ochoa
+ *
+ */
 @Stateless
 @LocalBean
 public class MovieService {
@@ -17,6 +23,13 @@ public class MovieService {
 	@EJB
 	private MovieDao movieDao;
 
+	/**
+	 * Serice for list all movies for actor name.
+	 * 
+	 * @param nameOfActor
+	 *            name of actor to search.
+	 * @return list of {@link Movie}
+	 */
 	public List<Movie> listMoviesforActorName(final String nameOfActor) {
 		if (nameOfActor == null || nameOfActor.trim().isEmpty()) {
 			return new ArrayList<>();
