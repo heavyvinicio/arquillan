@@ -1,5 +1,5 @@
 #ejbAppTest
-###Descripción
-Este proyecto pretende ejecutar pruebas unitarias sobre un componente ejb que usa CDI y glassfish en una plataforma JavaEE7.
+###Description
+This project execute one unit test on EJB project.
 ###Run
 mvn clean test -P glassfish-embedded-arquillian
