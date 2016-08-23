@@ -1,4 +1,4 @@
-package test.jpa;
+package test.dao;
 
 import java.util.List;
 

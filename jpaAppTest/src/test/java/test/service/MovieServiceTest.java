@@ -15,8 +15,8 @@ import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import test.dao.MovieDao;
 import test.dao.impl.DaoImpl;
-import test.jpa.MovieDao;
 import test.model.Movie;
 
 /**
@@ -43,6 +43,16 @@ public class MovieServiceTest {
 				.addAsResource("META-INF/create.sql").addAsResource("META-INF/drop.sql")
 				.addAsResource("META-INF/load.sql").addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
 	}
+
+//	@Deployment
+//	public static Archive<?> createDeployment() {
+//		JavaArchive jar = ShrinkWrap.create(JavaArchive.class).addPackage("test").addPackage("test.dao").addPackage("test.dao.impl")
+//				.addPackage("test.model").addClass(MovieService.class).addAsResource("META-INF/persistence.xml")
+//				.addAsResource("META-INF/create.sql").addAsResource("META-INF/drop.sql")
+//				.addAsResource("META-INF/load.sql").addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+//		System.out.println(jar.toString(true));
+//		return jar;
+//	}
 
 	/**
 	 * Test for list of movie for actor

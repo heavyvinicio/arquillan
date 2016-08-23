@@ -7,7 +7,7 @@ import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 
-import test.jpa.MovieDao;
+import test.dao.MovieDao;
 import test.model.Movie;
 
 /**
