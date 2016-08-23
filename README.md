@@ -1,3 +1,3 @@
-# arquillan
-Pruebas con arquillan y junit
+# Pruebas de Junit con Arquillan en JEE7
+##ejbAppTest: Pruebas sobre ejb con CDI
 
