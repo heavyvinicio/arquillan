@@ -14,6 +14,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 /**
+ * Clase para probar los metodos del servicio {@link SaludaServicio}.
+ * 
  * @author fernando.ochoa
  *
  */
@@ -23,16 +25,24 @@ public class SaludaServicioTest {
 	@Inject
 	private SaludaServicio saludaServicio;
 
+	/**
+	 * Genera el componente para enviar a deployar en el servidor de prueba.
+	 * 
+	 * @return {@link Archive}
+	 */
 	@Deployment
 	public static Archive<?> createDeployment() {
 		return ShrinkWrap.create(JavaArchive.class).addClass(SaludaServicio.class)
 				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
 	}
 
+	/**
+	 * Prueba para probar el servicio para saludar a la persona por el nombre.
+	 */
 	@Test
-	public final void testSaludaPersonaNOmbre() {
+	public final void testSaludaPersonaNombre() {
 		String nombre = "PEDRO";
-		String resultado = saludaServicio.saludaPersonaNOmbre(nombre);
+		String resultado = saludaServicio.saludaPersonaNombre(nombre);
 		System.out.println("Resultado: " + resultado);
 		assertEquals("Hola " + nombre, resultado);
 	}
